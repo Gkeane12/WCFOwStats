@@ -41,6 +41,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.5.1.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.5.1\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -98,6 +102,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\TEST.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -107,15 +112,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\OverwatchStats.Common.Data\OverwatchStats.Common.Data.csproj">
+    <ProjectReference Include="..\..\Git\OverwatchStats.Common.Data\OverwatchStats.Common.Data.csproj">
       <Project>{54332bfa-623b-4eb7-9f97-d5fb1611e38f}</Project>
       <Name>OverwatchStats.Common.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\OverwatchStats.Service.Web\OverwatchStats.Service.Web.csproj">
-      <Project>{df5d7d26-0b31-46eb-b2be-2f93c73723f7}</Project>
-      <Name>OverwatchStats.Service.Web</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\OverwatchStats.Store.Service\OverwatchStats.Store.Service.csproj">
+    <ProjectReference Include="..\..\Git\OverwatchStats.Store.Service\OverwatchStats.Store.Service.csproj">
       <Project>{f3f74225-8991-4e1f-b7fe-00a6429099f4}</Project>
       <Name>OverwatchStats.Store.Service</Name>
     </ProjectReference>
